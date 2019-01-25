@@ -27,16 +27,19 @@ function beep(nums) {
   for (var i = 0; i < nums+1; i++) {
     if (i.toString().split().includes("5")) {
       range.push("0", "beep", "boop", "I'm sorry Dave. I'm afraid I can't do that.", "4", "5");
-    } else if (i.toString().split().includes("3")){
-      range.push()
-    } else if (i.toString().split().includes("2")) {
-      range.push()
-    } else if (i.toString().split().includes("1")) {
-      range.push()
+      return range;
     }
+  }
+
+    // else if (i.toString().split().includes("3")) {
+    //   range.push("I'm sorry Dave. I'm afraid I can't do that.")
+    // } else if (i.toString().split().includes("2")) {
+    //   range.push("boop")
+    // } else if (i.toString().split().includes("1")) {
+    //   range.push("beep")
+    // }
     // range.push(i);
     // console.log(i);
-  }
   return range;
 }
 
