@@ -2,11 +2,8 @@
 
 function beep(nums) {
   var range = [];
-  for (var i = 0; i < nums+1; i++) {
-    if (nums.toString().includes("5")) {
-      range.push("0", "beep", "boop", "I'm sorry Dave. I'm afraid I can't do that.", "4", "5");
-      return range;
-    } else if (nums.toString().includes("3")) {
+  for (var i = 0; i < nums + 1; i++) {
+    if (nums.toString().includes("3")) {
       range.push("I'm sorry Dave. I'm afraid I can't do that.")
       return range;
     } else if (nums.toString().includes("2")) {
@@ -15,13 +12,39 @@ function beep(nums) {
     } else if (nums.toString().includes("1")) {
       range.push("beep")
       return range;
-    } else {
-      range.push(i);
+    }
+    else {
+      function boop(nums) {
+
+      };
+      }
     }
   }
     // console.log(i);
-  return range;
-}
+    function boop(nums) {
+      var range = [];
+
+
+      for (var i = 0; i < nums + 1; i++) {
+        if (i.toString().split("").includes("1")) {
+          range.push("beep")
+
+        } else if (i.toString().split("").includes("2")) {
+          range.push("boop")
+
+        } else if (i.toString().split("").includes("3")) {
+          range.push("I'm sorry Dave. I'm afraid I can't do that.")
+
+        } else {
+          range.push(i)
+          console.log(range.push(i));
+
+        }
+      }
+      return range;
+    }
+
+
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
@@ -30,6 +53,7 @@ $(document).ready(function() {
     console.log(nums);
     final = beep(nums);
     console.log(final);
-
+    // final2 = boop(nums);
+    // console.log(final2);
   });
 });
