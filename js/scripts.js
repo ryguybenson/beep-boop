@@ -37,9 +37,10 @@ function beep(nums) {
     } else if (nums.toString().includes("1")) {
       range.push("beep")
       return range;
+    } else {
+      range.push(i);
     }
   }
-    // range.push(i);
     // console.log(i);
   return range;
 }
