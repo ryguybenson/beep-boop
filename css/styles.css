@@ -1,9 +1,15 @@
 .btn {
   border-color: black;
   border-width: medium;
+  text-align: center;
 }
 #result {
   text-align: center;
-  text-transform: uppercase;
 
+}
+.container {
+  margin-top: 3%;
+}
+#formOne {
+  text-align: center;
 }
