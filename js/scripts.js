@@ -25,19 +25,20 @@
 function beep(nums) {
   var range = [];
   for (var i = 0; i < nums+1; i++) {
-    if (i.toString().split().includes("5")) {
+    if (nums.toString().includes("5")) {
       range.push("0", "beep", "boop", "I'm sorry Dave. I'm afraid I can't do that.", "4", "5");
+      return range;
+    } else if (nums.toString().includes("3")) {
+      range.push("I'm sorry Dave. I'm afraid I can't do that.")
+      return range;
+    } else if (nums.toString().includes("2")) {
+      range.push("boop")
+      return range;
+    } else if (nums.toString().includes("1")) {
+      range.push("beep")
       return range;
     }
   }
-
-    // else if (i.toString().split().includes("3")) {
-    //   range.push("I'm sorry Dave. I'm afraid I can't do that.")
-    // } else if (i.toString().split().includes("2")) {
-    //   range.push("boop")
-    // } else if (i.toString().split().includes("1")) {
-    //   range.push("beep")
-    // }
     // range.push(i);
     // console.log(i);
   return range;
