@@ -1,6 +1,6 @@
 
 
-function beep(nums) {
+function beep(nums, boop) {
   var range = [];
   for (var i = 0; i < nums + 1; i++) {
     if (nums.toString().includes("3")) {
@@ -14,14 +14,16 @@ function beep(nums) {
       return range;
     }
     else {
-      function boop(nums) {
-
-      };
+      range.push(boop(nums));
+      console.log(boop(nums));
+      return range;
+      console.log(range);
       }
     }
+    return range;
   }
     // console.log(i);
-    function boop(nums) {
+    function boop(nums, beep) {
       var range = [];
 
 
@@ -50,10 +52,10 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     var nums = parseInt($("#number").val());
-    console.log(nums);
-    final = beep(nums);
-    console.log(final);
-    final2 = boop(nums);
+    final2 = boop(nums, beep);
     console.log(final2);
+    final = beep(nums, boop);
+    console.log(final);
+    $("#result").text(final);
   });
 });
