@@ -25,8 +25,17 @@
 function beep(nums) {
   var range = [];
   for (var i = 0; i < nums+1; i++) {
-    range.push(i);
-    console.log(i);
+    if (i.toString().split().includes("5")) {
+      range.push("0", "beep", "boop", "I'm sorry Dave. I'm afraid I can't do that.", "4", "5");
+    } else if (i.toString().split().includes("3")){
+      range.push()
+    } else if (i.toString().split().includes("2")) {
+      range.push()
+    } else if (i.toString().split().includes("1")) {
+      range.push()
+    }
+    // range.push(i);
+    // console.log(i);
   }
   return range;
 }
@@ -36,7 +45,7 @@ $(document).ready(function() {
     event.preventDefault();
     var nums = parseInt($("#number").val());
     console.log(nums);
-    var final = beep(nums);
+    final = beep(nums);
     console.log(final);
 
   });
