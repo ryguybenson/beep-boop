@@ -37,7 +37,7 @@ function beep(nums) {
 
         } else {
           range.push(i)
-          console.log(range.push(i));
+
 
         }
       }
@@ -53,7 +53,7 @@ $(document).ready(function() {
     console.log(nums);
     final = beep(nums);
     console.log(final);
-    // final2 = boop(nums);
-    // console.log(final2);
+    final2 = boop(nums);
+    console.log(final2);
   });
 });
