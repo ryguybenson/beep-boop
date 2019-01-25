@@ -22,25 +22,21 @@ function beep(nums, boop) {
     }
     return range;
   }
-    // console.log(i);
     function boop(nums, beep) {
       var range = [];
 
-
       for (var i = 0; i < nums + 1; i++) {
         if (i.toString().split("") == "1") {
-          range.push("beep")
+          range.push(" beep ")
 
         } else if (i.toString().split("") == "2") {
-          range.push("boop")
+          range.push(" boop ")
 
         } else if (i.toString().split("") == "3") {
-          range.push("I'm sorry Dave. I'm afraid I can't do that.")
+          range.push(" I'm sorry Dave. I'm afraid I can't do that. ")
 
         } else {
-          range.push(i)
-
-
+          range.push(" " + i + " ")
         }
       }
       return range;

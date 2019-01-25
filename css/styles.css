@@ -1,0 +1,9 @@
+.btn {
+  border-color: black;
+  border-width: medium;
+}
+#result {
+  text-align: center;
+  text-transform: uppercase;
+
+}
