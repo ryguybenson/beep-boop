@@ -15,9 +15,7 @@ function beep(nums, boop) {
     }
     else {
       range.push(boop(nums));
-      console.log(boop(nums));
       return range;
-      console.log(range);
     }
   }
   return range;
