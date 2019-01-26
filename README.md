@@ -7,7 +7,7 @@
 ## Description
 
 _This application prompts users to enter a number, then either returns, "Beep", "Boop", "I'm sorry Dave. I'm afraid I can"t do that.", or all the numbers counting up to the users inputted number.
-Specs:
+* Specs:
 * The program returns a range of numbers from 0 to the users inputted number
   -input: "4"
   -output: "0,1,2,3,4"
