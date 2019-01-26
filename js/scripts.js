@@ -7,10 +7,10 @@ function beep(nums, boop) {
       range.push("I'm sorry Dave. I'm afraid I can't do that.")
       return range;
     } else if (nums.toString().includes("2")) {
-      range.push("boop")
+      range.push("Boop")
       return range;
     } else if (nums.toString().includes("1")) {
-      range.push("beep")
+      range.push("Beep")
       return range;
     }
     else {
@@ -18,29 +18,29 @@ function beep(nums, boop) {
       console.log(boop(nums));
       return range;
       console.log(range);
+    }
+  }
+  return range;
+}
+  function boop(nums, beep) {
+    var range = [];
+
+    for (var i = 0; i < nums + 1; i++) {
+      if (i.toString().split("") == "1") {
+        range.push(" Beep ")
+
+      } else if (i.toString().split("") == "2") {
+        range.push(" Boop ")
+
+      } else if (i.toString().split("") == "3") {
+        range.push(" I'm sorry Dave. I'm afraid I can't do that. ")
+
+      } else {
+        range.push(" " + i + " ")
       }
     }
     return range;
   }
-    function boop(nums, beep) {
-      var range = [];
-
-      for (var i = 0; i < nums + 1; i++) {
-        if (i.toString().split("") == "1") {
-          range.push(" beep ")
-
-        } else if (i.toString().split("") == "2") {
-          range.push(" boop ")
-
-        } else if (i.toString().split("") == "3") {
-          range.push(" I'm sorry Dave. I'm afraid I can't do that. ")
-
-        } else {
-          range.push(" " + i + " ")
-        }
-      }
-      return range;
-    }
 
 
 
@@ -49,9 +49,7 @@ $(document).ready(function() {
     event.preventDefault();
     var nums = parseInt($("#number").val());
     final2 = boop(nums, beep);
-    console.log(final2);
     final = beep(nums, boop);
-    console.log(final);
     $("#result").text(final);
   });
 });
