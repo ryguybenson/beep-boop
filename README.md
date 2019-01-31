@@ -12,14 +12,17 @@ _This application prompts users to enter a number, then either returns, "Beep", 
   -input: "4"
   -output: "0,1,2,3,4"
 * The program returns "Boop" if the inputted number has a 1 unless the number also contains a 2 or 3
-  -input: "2"
-  -output: "Beep"
+  -input: "1"
+  -output: "Boop"
 *The program returns "Beep" if the inputted number has a 2 unless the number contains a 3
+  -input: "2"
+  -output: "beep"
+ *The program returns "I'm sorry, Dave. I'm afraid I can't do that." if the inputted number contains a 3
   -input: "3"
   -output: "I'm sorry, Dave. I'm afraid I can't do that."
-* The program will return a range of numbers replacing the 1, 2, and 3 with "Beep", "Boop", and "I'm sorry, Dave. I'm afraid I can't do that."
-  -input: 5
-  -output: "0, Beep, Boop, I'm sorry, Dave. I'm afraid I can't do that, 4, 5"_
+* The program will return a range of numbers from 0 to the inputted number, numbers in the range including 1, 2, or 3 will be replaced with "Beep", "Boop", or "I'm sorry, Dave. I'm afraid I can't do that."
+  -input: 13
+  -output: "0 , Beep , Boop , I'm sorry Dave. I'm afraid I can't do that. , 4 , 5 , 6 , 7 , 8 , 9 , Beep , Beep , Boop , I'm sorry Dave. I'm afraid I can't do that."_
 * Gh-pages website link: https://ryguybenson.github.io/beep-boop/
 
 ## Setup/Installation Requirements
